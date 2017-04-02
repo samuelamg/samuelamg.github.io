@@ -130,9 +130,9 @@ Nginx 解决了服务器的C10K（就是在一秒之内连接客户端的数目�
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: 'FO9JTP38HT',
+      apiKey: 'be9db6873fccb4c2e3e24a98448ae394',
+      indexName: 'dev_NAME',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -259,9 +259,47 @@ Nginx 解决了服务器的C10K（就是在一秒之内连接客户端的数目�
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -437,8 +475,8 @@ Nginx 解决了服务器的C10K（就是在一秒之内连接客户端的数目�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/01/categories/" rel="next" title="vim快捷键">
-                <i class="fa fa-chevron-left"></i> vim快捷键
+              <a href="/2017/03/31/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -446,6 +484,10 @@ Nginx 解决了服务器的C10K（就是在一秒之内连接客户端的数目�
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/01/categories/" rel="prev" title="vim快捷键">
+                vim快捷键 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -770,6 +812,19 @@ Nginx 解决了服务器的C10K（就是在一秒之内连接客户端的数目�
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.0"></script>
 
 
 
