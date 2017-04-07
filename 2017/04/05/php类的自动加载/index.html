@@ -83,7 +83,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="php," />
 
 
 
@@ -101,15 +101,25 @@
 
 
 
-<meta name="description" content="博观而约取，厚积而薄发。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Airmag's Notes">
-<meta property="og:url" content="http://yoursite.com/categories/linux/index.html">
+<meta name="description" content="php加载文件的方式1、include,inclde_once,require,require_once常规加载
+2、__autoload()自动加载
+3、spl_autoload_register()自动加载
+1、常规加载方式假如我们有一个类文件a.php,里面定义了一个名字为A的类    &amp;lt;?php    class A{        public function __constru">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php类的自动加载">
+<meta property="og:url" content="http://yoursite.com/2017/04/05/php类的自动加载/index.html">
 <meta property="og:site_name" content="Airmag's Notes">
-<meta property="og:description" content="博观而约取，厚积而薄发。">
+<meta property="og:description" content="php加载文件的方式1、include,inclde_once,require,require_once常规加载
+2、__autoload()自动加载
+3、spl_autoload_register()自动加载
+1、常规加载方式假如我们有一个类文件a.php,里面定义了一个名字为A的类    &amp;lt;?php    class A{        public function __constru">
+<meta property="og:updated_time" content="2017-04-07T11:28:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Airmag's Notes">
-<meta name="twitter:description" content="博观而约取，厚积而薄发。">
+<meta name="twitter:title" content="php类的自动加载">
+<meta name="twitter:description" content="php加载文件的方式1、include,inclde_once,require,require_once常规加载
+2、__autoload()自动加载
+3、spl_autoload_register()自动加载
+1、常规加载方式假如我们有一个类文件a.php,里面定义了一个名字为A的类    &amp;lt;?php    class A{        public function __constru">
 
 
 
@@ -137,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/linux/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/05/php类的自动加载/"/>
 
 
 
 
 
-  <title> 分类: linux | Airmag's Notes </title>
+  <title> php类的自动加载 | Airmag's Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -168,7 +178,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -306,47 +316,187 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        linux
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/04/01/categories/" itemprop="url">
-              
-                <span itemprop="name">vim快捷键</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-01T15:18:16+08:00"
-              content="2017-04-01" >
-          04-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/05/php类的自动加载/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Airmag">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Airmag's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                php类的自动加载
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-05T23:24:00+08:00">
+                2017-04-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/04/05/php类的自动加载/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="php加载文件的方式"><a href="#php加载文件的方式" class="headerlink" title="php加载文件的方式"></a>php加载文件的方式</h4><pre><code>1、include,inclde_once,require,require_once常规加载
+2、__autoload()自动加载
+3、spl_autoload_register()自动加载
+</code></pre><h4 id="1、常规加载方式"><a href="#1、常规加载方式" class="headerlink" title="1、常规加载方式"></a>1、常规加载方式</h4><p>假如我们有一个类文件a.php,里面定义了一个名字为A的类<br>    &lt;?php<br>    class A{<br>        public function __construct(){<br>            echo ‘AAA’;<br>        }<br>    }<br>然后我们有一个index.php文件，要调用这个类A，常规做法：<br>    &lt;?php<br>    include(‘a.php’);<br>    $a = new A();<br>但是会存在一个问题，假如index.php文件里需要包含的不止是A类，而是需要很多类，那么就要写多次require语句。</p>
+<h4 id="2、-autoload-加载方式"><a href="#2、-autoload-加载方式" class="headerlink" title="2、__autoload()加载方式"></a>2、__autoload()加载方式</h4><p>在php5版本后，当我们使用尚未定义的类的时候，会自动调用__autoload()函数来实现php的自动加载，而不是写长长的包含语句。<br>类似上文的index.php文件可以写成<br>    &lt;?php<br>    public function __autoload($class){<br>        $file = $class.’.php’;<br>    if(is_file($file)){<br>        require<em>once($file);<br>        }<br>    }<br>    $a = new A();<br>\</em>_autoload()函数会根据包含的路径寻找类文件并进行加载，我们可以根据自己的需要去定义自动加载的规则。ps:__autoload函数只能加载一次。</p>
+<h4 id="3、spl-autoload-register-加载方式"><a href="#3、spl-autoload-register-加载方式" class="headerlink" title="3、spl_autoload_register()加载方式"></a>3、spl_autoload_register()加载方式</h4><p>那么问题来了，如果在一个系统中需要加载很多的类库，这些类库可能是由不同的开发人员编写的，其类名与实际的磁盘文件的映射规则不尽相同。这时如果要实现类库文件的自动加载，就必须在__autoload()函数中将所有的映射规则全部实现。<br>spl_autoload_register() 满足了此类需求。 它实际上创建了 autoload 函数的队列，按定义时的顺序逐个执行。相比之下， __autoload() 只可以定义一次。<br>    &lt;?php<br>    function loader($class){<br>      $file = $class . ‘.php’;<br>      if (is_file($file)) {<br>        require_once($file);<br>      }<br>    }<br>    spl_autoload_register(‘loader’);<br>    $a = new A();<br>或者使用匿名函数<br>    &lt;?php<br>    spl_autoload_register(function($file){<br>      $file = $class . ‘.php’;<br>      if (is_file($file)) {<br>        require_once($file);<br>      }<br>    });<br>    $a = new A();</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/WechatIMG12.png" alt="Airmag WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/php/" rel="tag"># php</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/01/categories/" rel="next" title="vim快捷键">
+                <i class="fa fa-chevron-left"></i> vim快捷键
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -354,6 +504,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
 
         </div>
         
@@ -373,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -389,7 +554,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -411,7 +576,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -463,6 +628,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#php加载文件的方式"><span class="nav-number">1.</span> <span class="nav-text">php加载文件的方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1、常规加载方式"><span class="nav-number">2.</span> <span class="nav-text">1、常规加载方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、-autoload-加载方式"><span class="nav-number">3.</span> <span class="nav-text">2、__autoload()加载方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、spl-autoload-register-加载方式"><span class="nav-number">4.</span> <span class="nav-text">3、spl_autoload_register()加载方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -603,6 +784,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
